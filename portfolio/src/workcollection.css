@@ -1,0 +1,85 @@
+/*Work card css*/
+.card-work {
+  height: 354px;
+  width: 290px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  overflow: hidden;
+}
+
+/*Image*/
+.card-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/*Description */
+.card-description {
+  display: flex;
+  position: absolute;
+  gap: 0.5em;
+  flex-direction: column;
+
+  color: #ffffff;
+  background-color: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  height: 70%;
+  bottom: 0;
+  border-radius: 16px;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+/* Hover states */
+.card-work:hover .card-description {
+  filter: blur(0px);
+  transform: translateY(100%);
+}
+.card-work:hover .four,
+.card-work:hover .three,
+.card-work:hover .two,
+.card-work:hover .one {
+  filter: blur(0px);
+}
+.collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.one {
+  background-image: url("../public/ac-mirage.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+}
+.two {
+  background-image: url("../public/farcry6.png");
+  background-size: 100% 100%;
+  filter: blur(5px);
+}
+.three {
+  background-image: url("../public/Yelcamp.png");
+  background-size: 100% 100%;
+  filter: blur(5px);
+}
+.four {
+  background-image: url("../public/random.png");
+  background-size: 100% 100%;
+  filter: blur(5px);
+}

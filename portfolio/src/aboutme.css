@@ -1,0 +1,76 @@
+#work > .container,
+#about-me > .container,
+#contact-me > .container {
+  border-left: 5px solid #5918df;
+}
+#about-me {
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+}
+.heading {
+  color: #eeff31;
+}
+.return {
+  color: #5918df;
+}
+.text-content {
+  color: #24e33a;
+}
+.this {
+  color: red;
+}
+.after-this {
+  color: #24e394;
+}
+.name,
+.email {
+  color: #24e33a;
+}
+.dob {
+  color: #e39d24;
+}
+.heading:hover,
+.return:hover,
+.text-content:hover {
+  background-color: rgba(106, 106, 106, 0.552);
+  transition: all 1s ease-out;
+}
+#contact-me {
+  background-color: #1c1c1c;
+}
+.fa-brands {
+  font-size: 2rem;
+}
+.fa-brands:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in;
+}
+
+.card-about {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  background: rgb(40, 40, 55);
+  background: linear-gradient(
+    344deg,
+    rgba(40, 40, 55, 1) 0%,
+    rgba(16, 16, 18, 1) 50%
+  );
+  box-shadow: 4px 6px 14px #00000036;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.5s;
+}
+.card-about:hover {
+  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  margin-top: -30px;
+}
+
+.card-about:hover .card_title {
+  transform: translateZ(50px);
+}
